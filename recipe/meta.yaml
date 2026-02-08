@@ -44,7 +44,7 @@ about:
   home: https://github.com/kujaku11/mth5
   summary: Archivable and exchangeable format for magnetotelluric data
   license: MIT
-  license_file: LICENSE
+  license_file: LICENSE.md
 
 extra:
   recipe-maintainers:
