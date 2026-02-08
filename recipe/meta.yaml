@@ -31,8 +31,6 @@ requirements:
     - xarray
     - mt-metadata
     - loguru
-    - pip:
-      - pydantic[email]
 
 test:
   imports:
