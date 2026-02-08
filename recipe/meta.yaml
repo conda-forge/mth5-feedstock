@@ -29,9 +29,10 @@ requirements:
     - pyyaml
     - scipy
     - xarray
-    - pydantic[email]
     - mt-metadata
     - loguru
+    - pip:
+      - pydantic[email]
 
 test:
   imports:
