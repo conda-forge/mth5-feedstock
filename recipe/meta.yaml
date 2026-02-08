@@ -1,5 +1,6 @@
 {% set name = "mth5" %}
 {% set version = "0.6.1" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -16,11 +17,12 @@ build:
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - pytest-runner
     - pip
+    - setuptools
   run:
-    - python >=3.10
+    - python >= {{ python_min }}
     - h5py
     - matplotlib-base
     - numpy
@@ -29,7 +31,8 @@ requirements:
     - pyyaml
     - scipy
     - xarray
-    - mt-metadata
+    - mt-metadata >=1.0.0
+    - email-validator
     - loguru
 
 test:
