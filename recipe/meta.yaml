@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.10
     - pytest-runner
     - pip
   run:
-    - python >=3.7
+    - python >=3.10
     - h5py
     - matplotlib-base
     - numpy
@@ -29,6 +29,7 @@ requirements:
     - pyyaml
     - scipy
     - xarray
+    - pydantic[email]
     - mt-metadata
     - loguru
 
