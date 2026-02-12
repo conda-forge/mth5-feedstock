@@ -22,10 +22,8 @@ requirements:
     - setuptools
 
   run:
-     - python >={{ python_min }}
      - python {{ python_min }}.*
      - setuptools
-     - pkg_resources
      - h5py
      - matplotlib-base
      - numpy
