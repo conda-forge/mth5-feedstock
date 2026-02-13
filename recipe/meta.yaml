@@ -1,5 +1,5 @@
 {% set name = "mth5" %}
-{% set version = "0.6.1" %}
+{% set version = "0.6.4" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mth5-{{ version }}.tar.gz
-  sha256: 161a8cc27284ce6c225f3a47019100e71cd8d2cd7ee933779d222eed746d89b5
+  sha256: 852e02d9baf1c24121275cff40c2804a440762261086922af28e0991b842aec6
 
 build:
   noarch: python
@@ -18,22 +18,22 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - pytest-runner
     - pip
-    - setuptools
+
   run:
-    - python >={{ python_min }}
-    - h5py
-    - matplotlib-base
-    - numpy
-    - obspy
-    - pandas
-    - pyyaml
-    - scipy
-    - xarray
-    - mt-metadata >=1.0.0
-    - email-validator
-    - loguru
+     - python {{ python_min }}.*
+     - setuptools <70
+     - h5py
+     - matplotlib-base
+     - numpy
+     - obspy
+     - pandas
+     - pyyaml
+     - scipy
+     - xarray
+     - mt-metadata >=1.0.0
+     - email-validator
+     - loguru
 
 test:
   imports:
@@ -43,6 +43,7 @@ test:
   requires:
     - python {{ python_min }}
     - pip
+    - setuptools <70
 
 about:
   home: https://github.com/kujaku11/mth5
