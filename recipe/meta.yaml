@@ -1,5 +1,5 @@
 {% set name = "mth5" %}
-{% set version = "0.6.5" %}
+{% set version = "0.6.6" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mth5-{{ version }}.tar.gz
-  sha256: 0ae1f956a20d9488e1523048b79ff7c53d1b6af2d3558e2e1d02db0164ec161e
+  sha256: cb34e5640f0a2e5d4836cb1b2113ec43fd806b2bac07a6e0ad34e811f0c0c99b
 
 build:
   noarch: python
