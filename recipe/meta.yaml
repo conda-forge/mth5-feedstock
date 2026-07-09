@@ -32,6 +32,8 @@ requirements:
     - scipy
     - xarray
     - mt-metadata >=1.0.0
+    - mt-timeseries
+    - mt-io
     - email-validator
     - loguru
 
